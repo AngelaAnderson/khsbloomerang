@@ -10,23 +10,23 @@
                 <div class="errors hidden"></div>
                 <div class="section donation">
                     <h3>Donation</h3>
-                    <div class="field radio 16912384 required" >
-                        <label for="16912384"><input id="16912384" name="donation-level" class="required" type="radio" value="25.000000" maxlength="255"></input><span class="label">$25.00</span></label>
+                    <div class="field radio 16912384 required" name="donationbuttons">
+                        <label for="16912384"><input id="16912384" name="donation-level" class="required" type="radio" value="25.000000" maxlength="255"></input><span class="label" >$25.00</span></label>
                     </div>
                     <div class="field radio 16912385 required" >
-                        <label for="16912385"><input id="16912385" name="donation-level" class="required" type="radio" value="50.000000" maxlength="255"></input><span class="label">$50.00</span></label>
+                        <label for="16912385"><input id="16912385" name="donation-level" class="required" type="radio" value="50.000000" maxlength="255"></input><span class="label" >$50.00</span></label>
                     </div>
                     <div class="field radio 16912386 required" >
-                        <label for="16912386"><input id="16912386" name="donation-level" class="required" type="radio" value="100.000000" maxlength="255"></input><span class="label">$100.00</span></label>
+                        <label for="16912386"><input id="16912386" name="donation-level" class="required" type="radio" value="100.000000" maxlength="255"></input><span class="label" >$100.00</span></label>
                     </div>
                     <div class="field radio 16912387 required" >
-                        <label for="16912387"><input id="16912387" name="donation-level" class="required" type="radio" value="500.000000" maxlength="255"></input><span class="label">$500.00 </span></label>
+                        <label for="16912387"><input id="16912387" name="donation-level" class="required" type="radio" value="500.000000" maxlength="255"></input><span class="label" >$500.00 </span></label>
                     </div>
                     <div class="field radio 16912388 required" >
-                        <label for="16912388"><input id="16912388" name="donation-level" class="required" type="radio" value="1000.000000" maxlength="255"></input><span class="label">$1,000.00 </span></label>
+                        <label for="16912388"><input id="16912388" name="donation-level" class="required" type="radio" value="1000.000000" maxlength="255"></input><span class="label" >$1,000.00 </span></label>
                     </div>
                     <div class="field radio other-option required" >
-                        <label for="other-option"><input id="other-option" name="donation-level" class="required" type="radio" maxlength="255"></input><span class="label">Other</span></label>
+                        <label for="other-option"><input id="other-option" name="donation-level" class="required" type="radio" maxlength="255"></input><span class="label" >Other</span></label>
                     </div>
                     <div class="field text other-amount" >
                         <input id="other-amount" name="other-amount" class="otherAmount" type="text" placeholder="$0.00"></input>
@@ -68,14 +68,14 @@
                     </div>
                 </div>
                 <div class="section contact">
-                    <h3>Contact Information</h3>
+                    <h3>Donor Information</h3>
                     <div class="field text first-name required" >
                         <label for="first-name"><span class="label">First Name</span><span class="required-star">*</span></label>
-                        <input id="first-name" name="first-name" class="required" type="text"></input>
+                        <input id="first-name" name="first-name" class="required" type="text" placeholder="First*"></input>
                     </div>
                     <div class="field text last-name required" >
                         <label for="last-name"><span class="label">Last Name</span><span class="required-star">*</span></label>
-                        <input id="last-name" name="last-name" class="required" type="text"></input>
+                        <input id="last-name" name="last-name" class="required" type="text" placeholder="Last*"></input>
                     </div>
                     <div class="field email email-address required" >
                         <label for="email-address"><span class="label">Email</span><span class="required-star">*</span></label>
@@ -83,7 +83,13 @@
                     </div>
                     <div class="field tel phone-number" >
                         <label for="phone-number"><span class="label">Phone</span></label>
-                        <input id="phone-number" name="phone-number" class="phoneUS" type="tel"></input>
+                        <input id="phone-number" name="phone-number" class="phoneUS" type="tel" placeholder="(###) ###-####"></input>
+                    </div>
+                    <div class="field text CustomAccountField_18434" >
+                        <label for="CustomAccountField_18434">Make Donation Anonymous?</label>
+                        <select id="CustomAccountField_18434" name="CustomAccountField_18434"><option value=""></option>
+                            <option value="19544">Yes</option>
+                        </select>
                     </div>
                 </div>
                 <div class="section billing-address">
@@ -440,64 +446,76 @@
                     </div>
                 </div>
                 <div class="section custom-fields">
-                    <h3>Additional Information</h3>
-                    <div class="field text CustomAccountField_18434" >
-                        <label for="CustomAccountField_18434">Make Donation Anonymous?</label>
-                        <select id="CustomAccountField_18434" name="CustomAccountField_18434"><option value=""></option>
-                            <option value="19544">Yes</option>
-                        </select>
-                    </div>
+                    <h3>Donation Motivation</h3>
+              <!--Make Donation Aninymour Goes Here-->
+                    <!--Place Donation Motivate Code Back Here -->
                     <div class="field text CustomAccountField_16917504 required" >
                         <label for="CustomAccountField_16917504">Donation Motivation<span class="required-star">*</span></label>
-                        <div id="CustomAccountField_16917504" class="checkboxes">
-                            <a href="javascript:void(0)" class="checkbox" data-id="16918528" onclick="var box = jQuery(this).children('input'); box.prop('checked', !box.prop('checked'));jQuery(box).trigger('change'); return false;">
-                                <input type="checkbox" value="16918528" onchange="jQuery(this).closest('.checkbox').toggleClass('selected')">
-                                <span class="text">Previous Adopter</span>
-                            </a>
-                            <a href="javascript:void(0)" class="checkbox" data-id="16919552" onclick="var box = jQuery(this).children('input'); box.prop('checked', !box.prop('checked'));jQuery(box).trigger('change'); return false;">
-                                <input type="checkbox" value="16919552" onchange="jQuery(this).closest('.checkbox').toggleClass('selected')">
-                                <span class="text">Move In Campaign</span>
-                            </a>
-                            <a href="javascript:void(0)" class="checkbox" data-id="16919553" onclick="var box = jQuery(this).children('input'); box.prop('checked', !box.prop('checked'));jQuery(box).trigger('change'); return false;">
-                                <input type="checkbox" value="16919553" onchange="jQuery(this).closest('.checkbox').toggleClass('selected')">
-                                <span class="text">Media Story</span>
-                            </a>
-                            <a href="javascript:void(0)" class="checkbox" data-id="16919554" onclick="var box = jQuery(this).children('input'); box.prop('checked', !box.prop('checked'));jQuery(box).trigger('change'); return false;">
-                                <input type="checkbox" value="16919554" onchange="jQuery(this).closest('.checkbox').toggleClass('selected')">
-                                <span class="text">Facebook/Twitter</span>
-                            </a>
-                            <a href="javascript:void(0)" class="checkbox" data-id="16919555" onclick="var box = jQuery(this).children('input'); box.prop('checked', !box.prop('checked'));jQuery(box).trigger('change'); return false;">
-                                <input type="checkbox" value="16919555" onchange="jQuery(this).closest('.checkbox').toggleClass('selected')">
-                                <span class="text">Shelter Tails E-Newsletter</span>
-                            </a>
-                            <a href="javascript:void(0)" class="checkbox" data-id="16918529" onclick="var box = jQuery(this).children('input'); box.prop('checked', !box.prop('checked'));jQuery(box).trigger('change'); return false;">
-                                <input type="checkbox" value="16918529" onchange="jQuery(this).closest('.checkbox').toggleClass('selected')">
-                                <span class="text">KHS Volunteer</span>
-                            </a>
-                            <a href="javascript:void(0)" class="checkbox" data-id="16919556" onclick="var box = jQuery(this).children('input'); box.prop('checked', !box.prop('checked'));jQuery(box).trigger('change'); return false;">
-                                <input type="checkbox" value="16919556" onchange="jQuery(this).closest('.checkbox').toggleClass('selected')">
-                                <span class="text">Other</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="field text CustomTransactionField_16929792" >
-                        <label for="CustomTransactionField_16929792">Is your gift in honor or in memory of someone?</label>
-                        <select id="CustomTransactionField_16929792" name="CustomTransactionField_16929792"><option value=""></option>
-                            <option value="16930816">In Honor Of</option>
-                            <option value="16930817">In Memory Of</option>
+                        <select id="CustomAccountField_16917504" name="CustomAccountField_16917504"><option value=""></option>
+                              <option value="16918528">Previous Adopter</option>
+                              <option value="16919552">Move In Campaign</option>
+                              <option value="16919553">Media Story</option>
+                              <option value="16919554">Facebook</option>
+                              <option value="16919555">Shelter Tails E-Newsletter</option>
+                              <option value="16918529">KHS Volunteer</option>
+                              <option value="16919556">Other</option>
                         </select>
+                      </div>
+                      <h3>Tribute Gift</h3>
+                    <!-- In Honor or Memory Plcaholder Remember to go back and update cutom field Id-->
+                    <h4> Is your gift in honor or in memory of a person or pet?</h4>
+                    <div class="field radio CustomTransactionField_16929792" >
+                      <label for="CustomTransactionField_16929792"><input id="16930816" name="tribute-level" type="radio" value="In Honor Of" maxlength="255"></input><span class="label" >Yes, my gift is in honor of</span></label>
                     </div>
-                    <div class="field text CustomTransactionField_16929793" >
-                        <label for="CustomTransactionField_16929793"><span class="label">Name of the person or pet your gift is in honor or memory of (Please Specify)</span></label>
-                        <input id="CustomTransactionField_16929793" name="CustomTransactionField_16929793" type="text" maxlength="255"></input>
+                    <div class="field radio CustomTransactionField_16929792" >
+                      <label for="CustomTransactionField_16929792"><input id="16930817" name="tribute-level" type="radio" value="In Memory Of" maxlength="255"></input><span class="label" >Yes, my gift is in memory of</span></label>
                     </div>
+                    <div class="field radio CustomTransactionField_16929792" >
+                      <label for="CustomTransactionField_16929792"><input id="16930817" name="tribute-level" type="radio" value="No" maxlength="255"></input><span class="label" >No, my gift is not in memory or in honor of anyone</span></label>
+                    </div>
+                    <!-- Pet or person?-->
+                    <h4> This donation is in honor or in memory of:</h4>
+                    <div class="field radio CustomTransactionField_16929793" >
+                      <label for="CustomTransactionField_16929793"><input id="16929794" name="tribute-level" type="radio" value="person" maxlength="255"></input><span class="label" >Person</span></label>
+                    </div>
+                    <div class="field radio CustomTransactionField_16929793" >
+                      <label for="CustomTransactionField_16929793"><input id="16929795" name="tribute-level" type="radio" value="Dog" maxlength="255"></input><span class="label" >Dog</span></label>
+                    </div>
+                    <div class="field radio CustomTransactionField_16929793" >
+                      <label for="CustomTransactionField_16929793"><input id="16929796" name="tribute-level" type="radio" value="Cat" maxlength="255"></input><span class="label" >Cat</span></label>
+                    </div>
+                    <div class="field radio CustomTransactionField_16929793" >
+                      <label for="CustomTransactionField_16929793 other-option"><input id="other-option" name="tribute-level" type="radio" maxlength="255"></input><span class="label" >Other</span></label>
+                    </div>
+                    <div class="field text other-amount" >
+                      <input id="other-amount" name="other-amount" class="otherAmount" type="text" placeholder="other"></input>
+                    <h4> Send a notification of my gift to:</h4>
                     <div class="field text CustomTransactionField_16932864" >
-                        <label for="CustomTransactionField_16932864"><span class="label">Who should we notify of your gift?</span></label>
-                        <input id="CustomTransactionField_16932864" name="CustomTransactionField_16932864" type="text" maxlength="255"></input>
+                        <input id="CustomTransactionField_16932864" name="CustomTransactionField_16932864" type="text" maxlength="255" placeholder="First Name"></input>
                     </div>
                     <div class="field text CustomTransactionField_16932865" >
-                        <label for="CustomTransactionField_16932865"><span class="label">Address:</span></label>
-                        <input id="CustomTransactionField_16932865" name="CustomTransactionField_16932865" type="text" maxlength="255"></input>
+                        <input id="CustomTransactionField_16932864" name="CustomTransactionField_16932865" type="text" maxlength="255" placeholder="Last Name"></input>
+                    </div>
+                    <div class="field text CustomTransactionField_16932866" >
+                        <input id="CustomTransactionField_16932864" name="CustomTransactionField_16932866" type="text" maxlength="255" placeholder="Street Address"></input>
+                    </div>
+                    <div class="field text CustomTransactionField_16932867" >
+                        <input id="CustomTransactionField_16932867" name="CustomTransactionField_16932864" type="text" maxlength="255" placeholder="Apt/Suite #"></input>
+                    </div>
+                    <div class="field text CustomTransactionField_16932868" >
+                        <input id="CustomTransactionField_16932868" name="CustomTransactionField_16932868" type="text" maxlength="255" placeholder="City"></input>
+                    </div>
+                    <div class="field text CustomTransactionField_16932869" >
+                        <input id="CustomTransactionField_16932869" name="CustomTransactionField_16932869" type="text" maxlength="255" placeholder="State"></input>
+                    </div>
+                    <div class="field text CustomTransactionField_16932810" >
+                        <input id="CustomTransactionField_16932810" name="CustomTransactionField_16932810" type="text" maxlength="255" placeholder="Zip/Postal Code"></input>
+                    </div>
+                    <div class="field text CustomTransactionField_16932811" >
+                        <input id="CustomTransactionField_16932811" name="CustomTransactionField_16932811" type="text" maxlength="255" placeholder="Message"></input>
+                    </div>
+                    <div class="field text CustomTransactionField_16932812" >
+                        <input id="CustomTransactionField_16932812" name="CustomTransactionField_16932812" type="text" maxlength="255" placeholder="Gift From: Family/Persons Name"></input>
                     </div>
                 </div>
                 <div class="section comment">

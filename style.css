@@ -1,11 +1,68 @@
+/* Set the font color and family for entire page*/
 body{
   color: #262729;
   font-family: sans-serif;
   font-size: 18px;
 }
+/*Set font size and color for section headings*/
 h3{
   color: #22819f;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+h4{
+  color: #262729;
   font-family: sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+}
+.CustomAccountField_18434,
+.CustomAccountField_16917504,
+.CustomTransactionField_16929792,
+.CustomTransactionField_16929793,
+.CustomTransactionField_16932864,
+.CustomTransactionField_16932865{
+  margin-bottom: 20px;
+}
+/* Removed circle next to rasio buttons and added blue borders around dontation amounts*/
+.radio{
+  border-style: solid;
+  border-color: #22819f;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 50px;
+  margin-right: 10px;
+}
+a.radio:hover{
+  border-style: solid;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 50px;
+  margin-right: 10px;
+}
+input[name="donation-level" ] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+/* End of donation button customization */
+.donation-level{
+  border-style: none;
+  border-color: #22819f;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 50px;
+  margin-right: 10px;
+
 }
 .donation-form label {
     color: #262729;
@@ -21,11 +78,37 @@ h3{
 .donation-form section {
     padding: 5px;
 }
-
+/*Added two blocks of data on the same line*/
+.first-name, .last-name, .city, .state, .zip-code {
+  display: inline-block;
+  width: 275px;
+}
+.email-address, .phone-number, .first-name, .last-name{
+  margin-bottom: 10px;
+}
 .donation-form .field {
     padding: 4px 0;
 }
-
+.CustomTransactionField_16932864,.CustomTransactionField_16932865{
+  display: inline-block;
+}
+.CustomTransactionField_16932868, .CustomTransactionField_16932869{
+  display: inline-block;
+}
+input[name="CustomTransactionField_16932811"]{
+  width: 50%;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+input{
+  width: 50%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+.placeholder{
+  font-size: 18px;
+}
 .donation-form .field .required-star {
     color: #aa0000;
     display: inline-block;
@@ -48,7 +131,7 @@ h3{
     height: 30px;
     line-height: 26px;
     padding: 2px 28px 2px 8px;
-    border-bottom: 1px solid rgba( 0, 0, 0, 0.1 );
+    border-bottom: 1px solid rgba( 0, 0, 0, 0.1 ;
     color: #404040;
     overflow: hidden;
     text-decoration: none;
@@ -66,7 +149,7 @@ h3{
 }
 
 .donation-form .field .checkbox.selected {
-    background: rgb( 50, 142, 253 );
+    background: #22819f;
     color: #fff;
 }
 
@@ -81,8 +164,8 @@ h3{
 .donation-form .field input,
 .donation-form .field select,
 .donation-form .field textarea {
-    padding: 4px;
-    max-width: 275px;
+    padding: 10px;
+    max-width: 550px;
     width: 96%;
 }
 
@@ -102,7 +185,10 @@ h3{
 .donation-form .field.checkbox label {
     display: inline-block;
 }
-
+/*Tester bugton background change */
+.donation-form .field.radio.active label{
+    background-color: #f29d22;
+}
 .donation-form .field.radio input,
 .donation-form .field.checkbox input {
     width: auto;
@@ -172,8 +258,10 @@ h3{
 
 .btn-group .btn-submit-donation {
     padding: 4px 10px;
+      background-color: #22819f;
+      radius: 5px;
+      font-size: 24px;
 }
-
 iframe#spreedly-iframe[style=\'visibility: hidden;\'] {
     display: none;
 }
